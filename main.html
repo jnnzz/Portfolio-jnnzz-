@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <!--NAVIGATION PART-->
+  <nav id="desktop-nav" data-aos="fade-down" data-aos-duration="1000">
+    <div class="logo">Jan Laroco</div>
+    <div class="forSticky">
+      <ul class="nav-links">
+         <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav" >
+    <div class="logo">Jan Laroco</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+      </div>
+    </div>
+
+  </nav>    
+
+  <!--SECTION PART-->
+  <section id="profile" >
+    <div class="section__pic-container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+      <img src="./assets/2x2 ppic.jpg" alt="Jan Laroco profile picture">
+    </div>
+      <div class="section__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jan Laroco</h1>
+        <p class="section__text__p2">Aspiring Web Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/cv2.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contacts</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.jpg" alt="My linkedin"
+          class="icon icon-hover" onclick="location.href='https://www.linkedin.com/in/jan-lorenz-laroco-8762b9289/'">
+          <img src="./assets/github.jpg" alt="My Github"
+          class="icon icon-hover" onclick="location.href='https://github.com/jnnzz'">
+          <img src="./assets/fb.jpg" alt="My Facebook"
+          class="icon icon-hover" onclick="location.href='https://www.facebook.com/janlorenz.laroco'">
+        </div>
+      </div>
+  </section>
+  <section id="about">
+  <div class="forDATA"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/aboutme.jpg" alt="ofile"
+        class="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            <img src="./assets/experience.jpg" alt="experience"
+            class="icon">
+            <h3>Experience</h3>
+            <p>100 years <br>Frontend Development</p>
+          </div>
+          <div class="details-container"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <img src="./assets/educ.jpg" alt="education"
+            class="icon">
+            <h3>Education</h3>
+            <p>Bachelor of Science in Information Technology <br>University of Cebu</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>I am a 2nd year IT student with a passion for web development. My goal is to combine my technical knowledge with creative problem-solving to build intuitive and dynamic websites. I strive to create web experiences that are not only functional but also engaging and user-friendly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <a href="#experience"><img src="./assets/down-arrow.jpg" alt="arrow" 
+      class="icon-arrow"></a>
+    <!-- <img src="./assets/down-arrow.jpg" alt="arrow" 
+    class="icon-arrow" 
+    onclick="location.href='./experience'"> -->
+  </section>
+  <section id="experience">
+  <div class="forDATA" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>Typescript</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <div class="details-container"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>PHP</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>SQL</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>Python</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.jpg" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>C++</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>  
+    <a href="#projects"><img src="./assets/down-arrow.jpg" alt="arrow" 
+      class="icon-arrow"></a>
+  </section>
+  <section id="projects">
+  <div class="forDATA"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">School Projects</h1>
+    <div class="experience-details-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div class="about-containers">
+      <div class="details-container color-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        
+        <div class="article-container">
+          <img src="./assets/triangle-checker.jpg" alt="project 1"
+          class="project-img">
+        </div>
+        <div>
+          <i class="fa-solid fa-info"></i>
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/jnnzz'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/jnnzz/JS-triangle-checker'">
+            Live demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/calculator.jpg" alt="project 2"
+          class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/jnnzz'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/jnnzz/calculator-JAVA'">
+            Live demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"> 
+        <div class="article-container">
+          <img src="./assets/jollikod.jpg" alt="project 3"
+          class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/jnnzz'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/jnnzz'">
+            Live demo
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    <a href="#contacts"><img src="./assets/down-arrow.jpg" alt="arrow" 
+      class="icon-arrow"></a>
+  </section>
+  <section id="contacts"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/educ.jpg" alt=""
+        class="icon contact-icon emal-icon">
+        <p><a href="mailto:larocojanlorenz@gmail.com">larocojanlorenz@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.jpg" alt=""
+        class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/jan-lorenz-laroco-8762b9289/">Linkedin</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Jan Laroco. All Rights Reserved.</p>
+  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/27c72b5707.js" crossorigin="anonymous"></script> -->
+    <script src="integrated.js"></script>
+</body>
+</html>
